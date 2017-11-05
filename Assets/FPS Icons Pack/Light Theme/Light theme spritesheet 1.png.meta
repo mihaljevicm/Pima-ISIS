@@ -1,0 +1,547 @@
+fileFormatVersion: 2
+guid: 5163ae49a0de665458bba61cd20c99b1
+timeCreated: 1509798312
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: LT Bullet 1
+    21300002: LT Bullet 2
+    21300004: LT Bullet 3
+    21300006: LT Bullet 4
+    21300008: LT Bullet 5
+    21300010: LT Bullet 6
+    21300012: LT Bullet 7
+    21300014: LT Bullet 8
+    21300016: LT Bullet 9
+    21300018: LT Bullet 10
+    21300020: LT Handgrenade 1
+    21300022: LT Handgrenade 2
+    21300024: LT Tank 1
+    21300026: LT Handgrenade 3
+    21300028: LT Handgrenade 4
+    21300030: LT Handgrenade 5
+    21300032: LT Handgrenade 6
+    21300034: LT Handgrenade 7
+    21300036: LT Handgrenade 8
+    21300038: LT Handgrenade 9
+    21300040: LT Tank 2
+    21300042: LT Jet 1
+    21300044: LT Jet 2
+    21300046: LT Explosive
+    21300048: LT Explosive remote
+    21300050: LT Healthpack
+    21300052: LT Health
+    21300054: Light theme spritesheet 1_0
+    21300056: Light theme spritesheet 1_1
+    21300058: Light theme spritesheet 1_2
+    21300060: Light theme spritesheet 1_3
+    21300062: Light theme spritesheet 1_4
+    21300064: Light theme spritesheet 1_5
+    21300066: Light theme spritesheet 1_6
+    21300068: Light theme spritesheet 1_7
+    21300070: Light theme spritesheet 1_8
+    21300072: Light theme spritesheet 1_9
+    21300074: Light theme spritesheet 1_10
+    21300076: Light theme spritesheet 1_11
+    21300078: Light theme spritesheet 1_12
+    21300080: Light theme spritesheet 1_13
+    21300082: Light theme spritesheet 1_14
+    21300084: Light theme spritesheet 1_15
+    21300086: Light theme spritesheet 1_16
+    21300088: Light theme spritesheet 1_17
+    21300090: Light theme spritesheet 1_18
+    21300092: Light theme spritesheet 1_19
+    21300094: Light theme spritesheet 1_20
+    21300096: Light theme spritesheet 1_21
+    21300098: Light theme spritesheet 1_22
+    21300100: Light theme spritesheet 1_23
+    21300102: Light theme spritesheet 1_24
+    21300104: Light theme spritesheet 1_25
+    21300106: Light theme spritesheet 1_26
+    21300108: Light theme spritesheet 1_27
+    21300110: Light theme spritesheet 1_28
+  externalObjects: {}
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 1024
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 1024
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Web
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 1
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Light theme spritesheet 1_0
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 3446
+        width: 188
+        height: 412
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Light theme spritesheet 1_1
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 3439
+        width: 199
+        height: 427
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Light theme spritesheet 1_2
+      rect:
+        serializedVersion: 2
+        x: 462
+        y: 3440
+        width: 195
+        height: 530
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Light theme spritesheet 1_3
+      rect:
+        serializedVersion: 2
+        x: 670
+        y: 3439
+        width: 191
+        height: 579
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Light theme spritesheet 1_4
+      rect:
+        serializedVersion: 2
+        x: 880
+        y: 3446
+        width: 222
+        height: 586
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Light theme spritesheet 1_5
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 3374
+        width: 466
+        height: 564
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Light theme spritesheet 1_6
+      rect:
+        serializedVersion: 2
+        x: 3071
+        y: 3370
+        width: 467
+        height: 568
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Light theme spritesheet 1_7
+      rect:
+        serializedVersion: 2
+        x: 3598
+        y: 3418
+        width: 448
+        height: 620
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Light theme spritesheet 1_8
+      rect:
+        serializedVersion: 2
+        x: 3600
+        y: 3392
+        width: 337
+        height: 209
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Light theme spritesheet 1_9
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 2415
+        width: 172
+        height: 995
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Light theme spritesheet 1_10
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 2416
+        width: 128
+        height: 638
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Light theme spritesheet 1_11
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 2418
+        width: 244
+        height: 496
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Light theme spritesheet 1_12
+      rect:
+        serializedVersion: 2
+        x: 618
+        y: 2418
+        width: 246
+        height: 528
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Light theme spritesheet 1_13
+      rect:
+        serializedVersion: 2
+        x: 878
+        y: 2414
+        width: 210
+        height: 620
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Light theme spritesheet 1_14
+      rect:
+        serializedVersion: 2
+        x: 2014
+        y: 2480
+        width: 420
+        height: 758
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Light theme spritesheet 1_15
+      rect:
+        serializedVersion: 2
+        x: 2510
+        y: 2479
+        width: 424
+        height: 759
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Light theme spritesheet 1_16
+      rect:
+        serializedVersion: 2
+        x: 3058
+        y: 2479
+        width: 432
+        height: 779
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Light theme spritesheet 1_17
+      rect:
+        serializedVersion: 2
+        x: 3570
+        y: 2490
+        width: 428
+        height: 774
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Light theme spritesheet 1_18
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 1824
+        width: 1060
+        height: 506
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Light theme spritesheet 1_19
+      rect:
+        serializedVersion: 2
+        x: 2719
+        y: 1663
+        width: 455
+        height: 311
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Light theme spritesheet 1_20
+      rect:
+        serializedVersion: 2
+        x: 2723
+        y: 1694
+        width: 607
+        height: 739
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Light theme spritesheet 1_21
+      rect:
+        serializedVersion: 2
+        x: 3434
+        y: 1670
+        width: 620
+        height: 762
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Light theme spritesheet 1_22
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 1247
+        width: 1062
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Light theme spritesheet 1_23
+      rect:
+        serializedVersion: 2
+        x: 2826
+        y: 858
+        width: 343
+        height: 704
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Light theme spritesheet 1_24
+      rect:
+        serializedVersion: 2
+        x: 3210
+        y: 858
+        width: 828
+        height: 627
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Light theme spritesheet 1_25
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 528
+        width: 872
+        height: 662
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Light theme spritesheet 1_26
+      rect:
+        serializedVersion: 2
+        x: 2848
+        y: 178
+        width: 464
+        height: 462
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Light theme spritesheet 1_27
+      rect:
+        serializedVersion: 2
+        x: 3392
+        y: 94
+        width: 630
+        height: 626
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Light theme spritesheet 1_28
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 48
+        width: 1338
+        height: 336
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    outline: []
+    physicsShape: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
