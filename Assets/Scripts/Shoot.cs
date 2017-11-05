@@ -4,23 +4,44 @@ using UnityEngine;
 
 public class Shoot : MonoBehaviour
 {
-	public Transform ProjectileParent;
-	public GameObject Projectile;
+    [SerializeField]
+	private Transform ProjectileParent;
+    [SerializeField]
+    private GameObject Projectile;
 
-	public List<Transform> FirePoints;
+    [SerializeField]
+    private List<Transform> FirePoints;
 
-	public float Force = 10.0f;
+    [SerializeField]
+    private float Force = 10.0f;
+
+    [SerializeField]
+    private float _shootAnimLenght = 1.0f;
+    [SerializeField]
+    private float _shootTimer = 1.0f;
+    private bool _canShoot = false;
 
 
+    void Awake()
+    {
+        _shootAnimLenght = GameManager.gameManager.ShootAnimTime;
+        _shootTimer = _shootAnimLenght;
+    }
 
-	void Update()
+    void Update()
 	{
-		if (Input.GetButtonDown ("Fire1")) 
+        _canShoot = GameManager.gameManager._canShoot;                  //TODO:Shoot on click instead of waiting _shootTimer to reach 0, but maintain shoot on button hold
+		if (_canShoot) 
 		{
-			foreach (Transform firePoint in FirePoints) 
-			{
-				ShootProjectile (firePoint);
-			}
+            _shootTimer -= Time.deltaTime;
+            if (_shootTimer <= 0.0f)
+            {
+                foreach (Transform firePoint in FirePoints)
+                {
+                    ShootProjectile(firePoint);
+                }
+                _shootTimer = _shootAnimLenght;
+            }
 		}
 	}
 

@@ -99,7 +99,8 @@ public class PlayerController : MonoBehaviour
             _isShooting = true;
             Invoke("Shoot", _shootTime);//shoot animation for _shootTime amount of time
         }
-        
+        GameManager.gameManager._canShoot = _isShooting;
+
         _animator.SetBool("IsRunning", _isRunning);
         _animator.SetBool("SlideKey", _isSlide);
         if(IsInvoking("Attack"))
@@ -219,6 +220,7 @@ public class PlayerController : MonoBehaviour
                     break;
                 case "Shoot":
                     _shootTime = clip.length;
+                    GameManager.gameManager.ShootAnimTime = _shootTime;
                     break;
             }
         }
