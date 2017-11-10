@@ -59,12 +59,15 @@ public class PlayerController : MonoBehaviour
             Debug.Log("Error: No animator");
         else
             Debug.Log("Animator loaded");
-        UpdateAnimClipTimes();
 
         _playerLayer = gameObject.layer; //player layer mask
 		_platformLayer = LayerMask.NameToLayer ("Platform"); //platform layer mask
 	
 	}
+    void Start()
+    {
+        UpdateAnimClipTimes();
+    }
 
     void Update()
     {

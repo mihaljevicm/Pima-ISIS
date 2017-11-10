@@ -112,6 +112,11 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &10657675 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1585333965995012, guid: da39ab90391895243b2c665fafa0a0a2,
+    type: 2}
+  m_PrefabInternal: {fileID: 97036341}
 --- !u!4 &47260959 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4385606883826894, guid: 366b7bba1bd4e3049b9c6632e9cee037,
@@ -414,6 +419,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 96bb5492a6845174aa9a6be2bd68fae2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  BulletParent: {fileID: 10657675}
+  ShootAnimTime: 1
+  _canShoot: 0
 --- !u!4 &167647473
 Transform:
   m_ObjectHideFlags: 0
@@ -425,7 +433,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &181687015
 Prefab:
@@ -804,6 +812,11 @@ Prefab:
       value: Cameras
       objectReference: {fileID: 0}
     - target: {fileID: 114730451150394114, guid: 6c18d3497fae99c4f910bbf35c967289,
+        type: 2}
+      propertyPath: Player
+      value: 
+      objectReference: {fileID: 526465972}
+    - target: {fileID: 114233644220611064, guid: 6c18d3497fae99c4f910bbf35c967289,
         type: 2}
       propertyPath: Player
       value: 
