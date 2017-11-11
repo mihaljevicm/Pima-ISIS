@@ -24,15 +24,18 @@ public class Shoot : MonoBehaviour
 
     void Start()
     {
-        //_shootAnimLenght = GameManager.gameManager.ShootAnimTime;
+       // _shootAnimLenght = GameManager.gameManager.ShootAnimTime;
         _shootTimer = _shootAnimLenght;
     }
 
     void Update()
 	{
+        //_shootAnimLenght = GameManager.gameManager.ShootAnimTime;
+        //_shootTimer = _shootAnimLenght;
+
         _canShoot = GameManager.gameManager._canShoot;                  //TODO:Shoot on click instead of waiting _shootTimer to reach 0, but maintain shoot on button hold
-		if (_canShoot) 
-		{
+        if (_canShoot)
+        {
             _shootTimer -= Time.deltaTime;
             if (_shootTimer <= 0.0f)
             {
@@ -42,7 +45,9 @@ public class Shoot : MonoBehaviour
                 }
                 _shootTimer = _shootAnimLenght;
             }
-		}
+        }
+        else
+            _shootTimer = _shootAnimLenght;
 	}
 
 	private void ShootProjectile(Transform firePoint)

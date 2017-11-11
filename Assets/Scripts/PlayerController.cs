@@ -19,6 +19,8 @@ public class PlayerController : MonoBehaviour
     private int _multiJump;
 
     [SerializeField]
+    private GameObject BulletParent;
+    [SerializeField]
 	private Transform GroundCheck; //Ground check Collider
     [SerializeField]
 	private LayerMask GroundLayerMask;
@@ -30,7 +32,8 @@ public class PlayerController : MonoBehaviour
     [Range(0.0f,10.0f)]
     private float _slideTime = 1.0f; //Amount of time in slide animation
     private float _attackTime = 1.0f; //Amount of time in melee animation 
-    private float _shootTime = 1.0f; //Amount of time in shoot animation
+    
+    public float _shootTime = 1.0f; //Amount of time in shoot animation
 
 	private Transform _transform;
 	private Rigidbody2D _rigidbody2d;
@@ -60,6 +63,8 @@ public class PlayerController : MonoBehaviour
         else
             Debug.Log("Animator loaded");
 
+       
+
         _playerLayer = gameObject.layer; //player layer mask
 		_platformLayer = LayerMask.NameToLayer ("Platform"); //platform layer mask
 	
@@ -67,6 +72,7 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         UpdateAnimClipTimes();
+        
     }
 
     void Update()
@@ -223,7 +229,6 @@ public class PlayerController : MonoBehaviour
                     break;
                 case "Shoot":
                     _shootTime = clip.length;
-                    GameManager.gameManager.ShootAnimTime = _shootTime;
                     break;
             }
         }
