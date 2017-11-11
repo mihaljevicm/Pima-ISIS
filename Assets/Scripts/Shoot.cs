@@ -1,11 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
+using UnityStandardAssets.CrossPlatformInput;
 
 public class Shoot : MonoBehaviour
 {
     [SerializeField]
-	private Transform ProjectileParent;
+    private Transform ProjectileParent;
     [SerializeField]
     private GameObject Projectile;
 
@@ -15,48 +17,42 @@ public class Shoot : MonoBehaviour
     [SerializeField]
     private float Force = 10.0f;
 
-    
+
     public float _shootAnimLenght = 1.0f;
     [SerializeField]
     private float _shootTimer = 1.0f;
     private bool _canShoot = false;
-
+    private bool shooted = false;
 
     void Start()
     {
-       // _shootAnimLenght = GameManager.gameManager.ShootAnimTime;
+        //_shootAnimLenght = GameManager.gameManager.ShootAnimTime;
         _shootTimer = _shootAnimLenght;
     }
 
     void Update()
-	{
-        //_shootAnimLenght = GameManager.gameManager.ShootAnimTime;
-        //_shootTimer = _shootAnimLenght;
-
+    {
         _canShoot = GameManager.gameManager._canShoot;                  //TODO:Shoot on click instead of waiting _shootTimer to reach 0, but maintain shoot on button hold
-        if (_canShoot)
+        if (_canShoot && !shooted)
         {
-            _shootTimer -= Time.deltaTime;
-            if (_shootTimer <= 0.0f)
-            {
-                foreach (Transform firePoint in FirePoints)
-                {
-                    ShootProjectile(firePoint);
-                }
-                _shootTimer = _shootAnimLenght;
-            }
+            ShootProjectile(FirePoints[0]);
+            shooted = true;
         }
-        else
-            _shootTimer = _shootAnimLenght;
-	}
+    }
 
-	private void ShootProjectile(Transform firePoint)
-	{
-		GameObject projectileClone = Instantiate (Projectile, firePoint.position, Quaternion.AngleAxis(-90.0f, Vector3.forward));
-		projectileClone.transform.SetParent (ProjectileParent);
+    private void ShootProjectile(Transform firePoint)
+    {
+        GameObject projectileClone = Instantiate(Projectile, firePoint.position, Quaternion.AngleAxis(-90.0f, Vector3.forward));
+        projectileClone.transform.SetParent(null);
 
-		Rigidbody2D projectileRigidbody = projectileClone.GetComponent<Rigidbody2D> ();
-		projectileRigidbody.AddForce (transform.up * Force, ForceMode2D.Impulse);
+        Rigidbody2D projectileRigidbody = projectileClone.GetComponent<Rigidbody2D>();
+        projectileRigidbody.AddForce(transform.up * Force, ForceMode2D.Impulse);
+        StartCoroutine(Wait());
+    }
 
-	}
+    IEnumerator<WaitForSeconds> Wait()
+    {
+        yield return new WaitForSeconds(_shootAnimLenght);
+        shooted = false;
+    }
 }

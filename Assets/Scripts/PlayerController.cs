@@ -19,8 +19,6 @@ public class PlayerController : MonoBehaviour
     private int _multiJump;
 
     [SerializeField]
-    private GameObject BulletParent;
-    [SerializeField]
 	private Transform GroundCheck; //Ground check Collider
     [SerializeField]
 	private LayerMask GroundLayerMask;
@@ -63,7 +61,7 @@ public class PlayerController : MonoBehaviour
         else
             Debug.Log("Animator loaded");
 
-       
+        UpdateAnimClipTimes();
 
         _playerLayer = gameObject.layer; //player layer mask
 		_platformLayer = LayerMask.NameToLayer ("Platform"); //platform layer mask
@@ -71,7 +69,7 @@ public class PlayerController : MonoBehaviour
 	}
     void Start()
     {
-        UpdateAnimClipTimes();
+        
         
     }
 
