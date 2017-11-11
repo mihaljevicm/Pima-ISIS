@@ -19,16 +19,10 @@ public class Shoot : MonoBehaviour
 
 
     public float _shootAnimLenght = 1.0f;
-    [SerializeField]
-    private float _shootTimer = 1.0f;
+    
     private bool _canShoot = false;
     private bool shooted = false;
 
-    void Start()
-    {
-        //_shootAnimLenght = GameManager.gameManager.ShootAnimTime;
-        _shootTimer = _shootAnimLenght;
-    }
 
     void Update()
     {
