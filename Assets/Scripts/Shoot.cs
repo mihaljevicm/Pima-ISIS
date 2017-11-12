@@ -16,14 +16,15 @@ public class Shoot : MonoBehaviour
 
     [SerializeField]
     private float Force = 10.0f;
-
-
-    public float _shootAnimLenght = 1.0f;
+    private float _shootAnimLenght = 1.0f;
     
     private bool _canShoot = false;
     private bool shooted = false;
 
-
+    void Start()
+    {
+        _shootAnimLenght = GetComponentInParent<PlayerController>()._shootTime;    
+    }
     void Update()
     {
         _canShoot = GameManager.gameManager._canShoot;                  //TODO:Shoot on click instead of waiting _shootTimer to reach 0, but maintain shoot on button hold
@@ -41,10 +42,10 @@ public class Shoot : MonoBehaviour
 
         Rigidbody2D projectileRigidbody = projectileClone.GetComponent<Rigidbody2D>();
         projectileRigidbody.AddForce(transform.up * Force, ForceMode2D.Impulse);
-        StartCoroutine(Wait());
+        StartCoroutine(ShootWait());
     }
 
-    IEnumerator<WaitForSeconds> Wait()
+    IEnumerator<WaitForSeconds> ShootWait()
     {
         yield return new WaitForSeconds(_shootAnimLenght);
         shooted = false;

@@ -9,17 +9,17 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 1680088944744826}
+  m_RootGameObject: {fileID: 1463517420675638}
   m_IsPrefabParent: 1
---- !u!1 &1680088944744826
+--- !u!1 &1463517420675638
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 5
   m_Component:
-  - component: {fileID: 4899247985439952}
-  - component: {fileID: 114313595437133878}
+  - component: {fileID: 4409406206041596}
+  - component: {fileID: 114276986159692958}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -27,12 +27,12 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4899247985439952
+--- !u!4 &4409406206041596
 Transform:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1680088944744826}
+  m_GameObject: {fileID: 1463517420675638}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 41.96799, y: -0.6391956, z: 0.009277344}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -40,15 +40,15 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &114313595437133878
+--- !u!114 &114276986159692958
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1680088944744826}
+  m_GameObject: {fileID: 1463517420675638}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 96bb5492a6845174aa9a6be2bd68fae2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ShootAnimTime: 0.3
+  _canShoot: 0
